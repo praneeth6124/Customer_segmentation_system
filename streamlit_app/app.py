@@ -15,7 +15,7 @@ monetary = st.number_input("Monetary", min_value=0.0,step=1.0)
 
 if st.button("Predict Segment"):
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://customer-segmentation-system-2aol.onrender.com",
         json={
             "Recency": recency,
             "Frequency": frequency,
@@ -26,6 +26,7 @@ if st.button("Predict Segment"):
     result = response.json()
 
     st.success(f"Predicted Segment: {result['segment']}")
+
 
 
 
