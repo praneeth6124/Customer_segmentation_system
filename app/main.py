@@ -8,13 +8,10 @@ app = FastAPI()
 def home():
     return {"status": "running"}
 
-@app.get("/ping")
-def ping():
-    return {"status": "alive"}
-
 @app.post("/predict")
 def predict(customer: Customer):
     return predict_customer(customer.dict())
+
 
 
 
