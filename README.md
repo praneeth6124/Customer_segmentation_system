@@ -30,7 +30,7 @@ An end-to-end machine learning system that segments customers using RFM analysis
 • Scaled features for clustering consistency  
 • Trained KMeans model for segmentation  
 
-• Performed anomaly detection using Isolation Forest:
+• Performed anomaly detection using Isolation Forest: (Analysis Phase)
   - Applied model on RFM features  
   - Detected outliers based on isolation mechanism  
   - Flagged customers with unusual behavior patterns  
